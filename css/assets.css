@@ -1,0 +1,162 @@
+* {
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	color: #fff;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #F6F6FA;
+	font-family: Gilroy;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+/* Шрифты */
+
+@font-face {
+ font-family: Gilroy;
+ src: url(fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+ font-family: Gilroy-Bold;
+ src: url(fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+ font-family: Acrom-Bold;
+ src: url(fonts/Acrom-Bold.ttf);
+}
+
+
+/* Typography */
+
+h1 {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 63px;
+	line-height: 76px;
+	color: #FFFFFF;
+}
+
+
+.title {
+
+}
+
+.subtitle {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+
+p {
+
+}
+
+
+/* Buttons */
+
+a.btn {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #0E1317;
+	background: #FFFFFF;
+	border-radius: 100px;
+	padding: 16px 30px;
+	display: inline-block;
+	position: relative;
+}
+
+a.btn img {
+	margin-left: 12px;
+}
+
+a.button {
+
+}
+a.button:last-child {
+
+}
+
+a.button:hover,
+button:hover {
+
+}
+
+
+a.button.btn-grey {
+
+}
+
+a.button.btn-grey:hover {
+
+}
+
+a.btn-blue {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+	text-decoration: none;
+
+	background: linear-gradient(90deg, #6C79E3 0%, #86A8FB 100%);
+	box-shadow: 0px 15px 65px rgba(197, 202, 224, 0.65);
+	border-radius: 100px;
+	padding: 16px 35px;
+	display: inline-block;
+	max-width: 100%;
+}
+
+a.btn-blue img {
+	margin-left: 8px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+ h1 {
+
+ }
+
+ .title {
+
+ }
+
+ .subtitle {
+
+ }
+
+ p {
+
+ }
+
+ a.button {
+
+ }
+ a.button-send {
+
+}
+
+}
+
