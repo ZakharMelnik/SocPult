@@ -16,23 +16,17 @@ $(document).ready(function() {
 
 	/*Header menu*/
 
-	$(".header__menu img").click(function(e){
+	$(".btn-menu").click(function(e){
 		e.preventDefault();
-		$("#menu").toggleClass("show");
+		$(".mobile-menu").toggleClass("show");
 	});
 
-	$("#menu a").click(function(){
-
-		setTimeout(function() {
-			$(".header__menu img").click();
-		}, 200);
-		
+	$(".btn-menu img").click(function(){
+	      var src = ($(this).attr("src") === "img/icons/menu.svg")
+	                    ? "img/icons/close.svg" 
+	                    : "img/icons/menu.svg";
+	      $(this).attr("src", src);
 	});
-
-	$(document).on('click','.milk-shadow',function(){
-		$(".header__menu img").click();
-	});
-
 
 	/*feedback form*/
 

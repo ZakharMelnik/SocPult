@@ -268,13 +268,13 @@ section#cards {
 
 
 
-body.main header {
+header {
 	width: 100%;
 	background: linear-gradient(90deg, #707AE4 0%, #72A5F4 49.48%, #6B75E3 100%);
 	box-shadow: 0px 15px 35px rgba(112, 122, 228, 0.15);
 }
 
-body.main .container-header {
+.container-header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -284,7 +284,7 @@ body.main .container-header {
 }
 
 
-body.main .container-header .header-logo {
+.container-header .header-logo {
 	font-family: Acrom-Bold;
 	font-style: normal;
 	font-size: 20px;
@@ -294,31 +294,31 @@ body.main .container-header .header-logo {
 	align-items: center;
 }
 
-body.main .container-header .header-logo img {
+.container-header .header-logo img {
 	margin-right: 7px;
 }
 
-body.main .container-header .header-logo:hover {
+.container-header .header-logo:hover {
 	text-decoration: none;
 }
 
-body.main .container-header ul.header-links {
+.container-header ul.header-links {
 }
 
-body.main .container-header ul.header-links li {
+.container-header ul.header-links li {
 	display: inline-block;
 	margin-right: 45px;
 }
 
-body.main .container-header ul.header-links li:last-child {
+.container-header ul.header-links li:last-child {
 	margin-right: 0;
 }
 
-body.main .container-header ul.header-links li.active a {
+.container-header ul.header-links li.active a {
 	opacity: 1;
 }
 
-body.main .container-header ul.header-links li a {
+.container-header ul.header-links li a {
 	font-family: Gilroy-Bold;
 	font-style: normal;
 	font-size: 16px;
@@ -327,51 +327,26 @@ body.main .container-header ul.header-links li a {
 	opacity: 0.5;
 }
 
-body.main .container-header ul.header-links li a:hover {
+.container-header ul.header-links li a:hover {
 	opacity: 1;
 	text-decoration: none;
 }
 
-body.main .container-header a.btn {
-	padding: 16px 63px 16px 40px;
-	display: flex;
-	align-items: center;
-	line-height: 19px;
-	margin-right: 30px;
-}
-
-body.main .container-header a.btn span.circle {
-	width: 38px;
-	height: 38px;
-	background: #FFC238;
-	border-radius: 100px;
-	position: absolute;
-	right: 6px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-body.main .container-header a.btn img {
-    margin-left: 0;
-}
-
-body.main .container-header .links {
+.links {
 	display: flex;
 	align-items: center;
 }
-
-body.main .container-header .links .btn-settings {
+.links .btn-settings {
 	margin-right: 20px;
 }
 
 
-body.main .container-header .links .btn-notify {
+.links .btn-notify {
 	text-decoration: none;
 	position: relative;
 }
 
-body.main .container-header .links .btn-notify span {
+.links .btn-notify span {
 	font-family: Gilroy-Bold;
 	font-style: normal;
 	font-size: 12px;
@@ -390,7 +365,7 @@ body.main .container-header .links .btn-notify span {
 	right: -8px;
 }
 
-body.main .container-header .btn-menu {
+.container-header .btn-menu {
 	display: none;
 }
 
@@ -731,3 +706,78 @@ body.main .container-header .btn-menu {
 .last-orders .item .td .num.stat {
 	color: #7EB751;
 }
+
+.mobile-menu {
+	position: fixed;
+	z-index: 99;
+	top: 60px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #F5F5FA;
+	display: none;
+}
+
+.mobile-menu.show {
+	display: block;
+}
+
+.mobile-menu .mobile-balance {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.mobile-menu ul {
+	padding: 0 20px;
+}
+
+.mobile-menu li a {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #9393C0;
+	opacity: 0.5;
+	text-decoration: none;
+
+	background: #EBEBF5;
+	border-radius: 3px;
+	width: 100%;
+	padding: 16px 23px 15px;
+	display: block;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.mobile-menu li.active a,
+.mobile-menu li a:hover {
+	color: #000000;
+	opacity: 1;
+	background: #fff;
+}
+
+.mobile-menu li.active a:before,
+.mobile-menu li a:hover:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 13px;
+	bottom: 12px;
+	width: 2px;
+	height: 25px;
+	background: #FEC23C;
+
+}
+
+.mobile-menu .links {
+	padding: 0 20px;
+	margin-bottom: 22px;
+	justify-content: space-between;
+}
+
+.mobile-menu .links .btn-notify {
+	margin-right: 8px;
+}
+
+.mobile-menu .links a.btn {}

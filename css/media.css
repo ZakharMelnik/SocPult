@@ -1,20 +1,20 @@
 @media (max-width: 1200px) {
-	body.main .container-header {
+	.container-header {
 		padding: 15px;
 	}
-	body.main .container-header ul.header-links li {
+	.container-header ul.header-links li {
 		margin-right: 20px;
 	}
 
-	body.main .container-header .header-logo img {
+	.container-header .header-logo img {
 		max-width: 30px;
 	}
 
-	body.main .container-header .header-logo {
+	.container-header .header-logo {
 		font-size: 18px;
 	}
 
-	body.main .container-header a.btn {
+	.container-header a.btn {
 	    padding: 14px 58px 14px 20px;
 	}
 
@@ -23,16 +23,16 @@
 	    grid-gap: 30px 15px;
 	}
 
-	body.main .balance {
+	.balance {
 		display: none;
 	}
 
-	body.main .mobile-balance {
+	.mobile-balance {
 		display: flex;
 		justify-content: center;
 	}
 
-	body.main .mobile-balance .balance-head {
+	.mobile-balance .balance-head {
 		margin-right: 30px;
 	}
 
@@ -84,19 +84,19 @@
 		margin-bottom: 15px;
 	}
 
-	.last-orders .item {
+	body.main .last-orders .item {
 		padding: 10px 15px;
 	}
 
-	.last-orders .item .service .img {
+	body.main .last-orders .item .service .img {
 	    margin-right: 10px;
 	}
 
-	.last-orders .item .td .num, .last-orders .item .service .descr {
+	body.main .last-orders .item .td .num, .last-orders .item .service .descr {
 		font-size: 10px;
 	}
 
-	.last-orders .item .td .descr, .last-orders .item .service .id {
+	body.main .last-orders .item .td .descr, .last-orders .item .service .id {
 		font-size: 10px;
 	}
 }
@@ -109,11 +109,11 @@
 }
 
 @media (max-width: 992px) {
-	body.main .container-header ul.header-links {
+	.container-header ul.header-links {
 		display: none;
 	}
 
-	body.main .container-header .btn-menu {
+	.container-header .btn-menu {
 		display: block;
 	}
 
@@ -160,11 +160,16 @@
 }
 
 @media (max-width: 520px) {
-	body.main .container-header .links {
+	header {
+		position: fixed;
+		z-index: 1;
+	}
+
+	.container-header .links {
 		display: none;
 	}
 
-	body.main .container-header .menu {
+	.container-header .menu {
 		display: block;
 	}
 
@@ -174,7 +179,14 @@
 
 	.mobile-balance {
 		display: flex;
+		justify-content: space-between;
+		margin-top: 60px;
 	}
+
+	.mobile-balance .balance-head {
+		margin-right: 0;
+	}
+
 
 	body.main .grid {
 	    grid-template-columns: repeat(1, 1fr);
@@ -228,14 +240,6 @@
 		white-space: nowrap;
 	}
 
-	body.main .mobile-balance {
-		justify-content: space-between;
-	}
-
-	body.main .mobile-balance .balance-head {
-		margin-right: 0;
-	}
-
 	body.main .last-orders .item {
 		flex-wrap: wrap;
 		background: #fff;
@@ -247,7 +251,7 @@
 		box-shadow: none;
 	}
 	
-	.last-orders .title {
+	body.main .last-orders .title {
 		font-size: 18px;
 		line-height: 22px;
 		margin-bottom: 15px;
@@ -263,20 +267,24 @@
 		margin-right: 15px;
 	}
 
-	.last-orders .item .td .descr, .last-orders .item .service .id, .last-orders .item .service .descr {
+	body.main .last-orders .item .td .descr, .last-orders .item .service .id, .last-orders .item .service .descr {
 		font-size: 12px;
 	}
 
-	.last-orders .item .td .num {
+	body.main .last-orders .item .td .num {
 		font-size: 14px;
 	}
 
-	.last-orders .item .service {
+	body.main .last-orders .item .service {
 		margin-bottom: 10px;
 	}
 
-	.last-orders .item .td {
+	body.main .last-orders .item .td {
 		margin-bottom: 10px;
+	}
+
+	body.main .info-block .orders span {
+		display: none;
 	}
 
 }
