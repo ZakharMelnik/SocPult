@@ -217,6 +217,7 @@
 	body.main .info-block .orders {
 		width: auto;
 		margin-bottom: 0;
+		font-size: 24px;
 	}
 
 	body.main .info-block .sum {
