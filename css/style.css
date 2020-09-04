@@ -390,6 +390,10 @@ body.main .container-header .links .btn-notify span {
 	right: -8px;
 }
 
+body.main .container-header .btn-menu {
+	display: none;
+}
+
 .grid {
 	margin-top: 40px;
 }
@@ -517,3 +521,69 @@ body.main .container-header .links .btn-notify span {
 	display: block;
 	margin-bottom: 30px;
 }
+
+.status .price {
+	background: #F1F1FE;
+	box-shadow: 0px 6px 15px rgba(224, 224, 249, 0.15);
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	padding: 15px 20px;
+}
+
+.status .price .img {
+	margin-right: 17px;
+	margin-bottom: 0;
+}
+
+.status .price .text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+
+}
+
+.status .price .text .descr {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #B3B3D6;
+	margin-bottom: 4px;
+}
+
+.status .price .text .sum {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+}
+
+.status .terms .descr {
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 10px;
+}
+
+.status .terms .sum {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.status a.btn-grey {
+	width: 200px;
+	max-width: 200px;
+	margin: 0 auto;
+
+}
+

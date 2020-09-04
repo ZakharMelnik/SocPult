@@ -29,6 +29,10 @@
 	body.main .container-header ul.header-links {
 		display: none;
 	}
+
+	body.main .container-header .btn-menu {
+		display: block;
+	}
 }
 
 @media (max-width: 768px) {
