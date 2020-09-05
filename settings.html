@@ -17,7 +17,7 @@
   
 </head>
 
-<body class="grid-5">
+<body class="grid-4 body-settings">
 
 <header>
   <div class="container container-header">
@@ -25,7 +25,7 @@
 
       <ul class="header-links">
         <li><a href="index.html">Панель управления</a></li>
-        <li class="active"><a href="orders.html">Мои заказы</a></li>
+        <li><a href="orders.html">Мои заказы</a></li>
         <li><a href="prices.html">Цены и услуги</a></li>
         <li><a href="top.html">Топ-10</a></li>
         <li><a href="api.html">API</a></li>
@@ -72,7 +72,7 @@
 
   <ul>
     <li><a href="index.html">Панель управления</a></li>
-    <li class="active"><a href="orders.html">Мои заказы</a></li>
+    <li><a href="orders.html">Мои заказы</a></li>
     <li><a href="prices.html">Цены и услуги</a></li>
     <li><a href="top.html">Топ-10</a></li>
     <li><a href="api.html">API</a></li>
@@ -131,15 +131,29 @@
       <a href="#" class="btn-grey">Список статусов</a>
     </div>
 
-    <div class="menu-orders">
-      <a href="#" class="active">Заказы <span>6</span></a>
-      <a href="#">Автолайкер <span>2</span></a>
-    </div>
+    <div class="settings">
+      <div class="container-settings">
+        <div class="title">Настройки</div>
+        <hr>
 
-    <div class="orders">
-      <div class="order">
-        
+        <form action="#">
+          <label for="mail">Электронная почта</label>
+          <div class="descr">Мы отправили письмо с подтверждением вам на почту.</div>
+          <input type="text" placeholder="Почта" id="mail">
+
+          <label for="login">Ваш логин</label>
+          <div class="descr">У Вас есть логин и пароль чтобы иметь доступ к SocPult даже при отключении аккаунтов соц. сетей.</div>
+          <input type="text" placeholder="Логин" id="login">
+
+          <label for="password">Смена пароля</label>
+          <input type="password" placeholder="Текущий пароль" id="password">
+          <input type="password" placeholder="Повторите парль">
+
+          <button type="submit" class="btn-blue">Применить</button>
+          <a href="land.html" class="btn-grey">Выйти из аккаунта</a>
+        </form>
       </div>
+      <img src="img/settings-bg.svg" alt="" class="settings-bg">
     </div>
 
   </div>
