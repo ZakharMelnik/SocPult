@@ -1,4 +1,8 @@
 @media (max-width: 1200px) {
+	.balance,
+	.status {
+		width: auto;
+	}
 	.container-header {
 		padding: 15px;
 	}
