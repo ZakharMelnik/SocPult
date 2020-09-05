@@ -42,10 +42,6 @@ body {
 	grid-gap: 35px;
 }
 
-.grid-5 .grid {
-	grid-template-columns: 295px repeat(4, 1fr);
-	grid-gap: 35px;
-}
 
 /* Шрифты */
 
