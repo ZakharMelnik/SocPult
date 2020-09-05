@@ -37,6 +37,11 @@ body {
     grid-gap: 35px;
 }
 
+.order .grid {
+	grid-template-columns: 295px repeat(3, 1fr);
+	grid-gap: 35px;
+}
+
 /* Шрифты */
 
 @font-face {
