@@ -167,12 +167,43 @@
 
 	.task-selection {
 		grid-column: 1 / 2;
-		max-width: 340px;
+		height: 100px;
+		padding: 15px;
 	}
 
 	.tasks {
 	    grid-column: 2 / 5;
 	}
+
+	.tasks .item {
+		width: 600px;
+		height: 100px;
+		padding: 15px;
+	}
+
+	.tasks.order_3 .link {
+		padding: 15px;
+		width: 600px;
+		height: 100px;
+	}
+
+	.tasks.order_3 .link .left {
+		margin-right: 15px;
+	}
+
+	.tasks.order_3 .link .img {
+		margin-right: 15px;
+	}
+
+	.tasks.order_3 .link .descr {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.tasks.order_3 .link input {
+		max-width: 300px;
+	}
+
 }
 
 @media (min-width: 1440px) {
@@ -195,6 +226,41 @@
 
 
 @media (max-width: 992px) {
+
+	.task-selection {
+		grid-column: 1;
+		grid-row: 1 / 2;
+		height: auto;
+	}
+
+	.task-selection .img img {
+		max-height: 40px;
+	}
+
+	.tasks {
+	    grid-column: 1;
+	    grid-row: 2 / 3;
+	}
+
+	.tasks .item {
+		width: 100%;
+		height: auto;
+		margin-bottom: 15px;
+	}
+
+	.tasks .item .head .img {
+		margin-right: 15px;
+	}
+
+	.tasks .item .head .descr {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.tasks.order_3 .link {
+		width: 100%;
+	}
+
 
 	.body-orders .orders {
 	    grid-template-columns: repeat(3, 1fr);
