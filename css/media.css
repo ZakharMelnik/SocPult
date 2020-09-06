@@ -139,14 +139,60 @@
 	body.main .last-orders .item .td .descr, .last-orders .item .service .id {
 		font-size: 10px;
 	}
+
+	.navigation {
+		display: none;
+	}
+
+	.documentation {
+		display: none;
+	}
+
+	.api {
+		grid-column: 1;
+	}
+
+	.main .grid,
+	.grid-4 .grid {
+	    grid-gap: 15px!important;
+	}
+
+	.body-order .status {
+		display: none;
+	}
+
+	.promotion {
+	    grid-column: 1 / 5;
+	}
+
+	.task-selection {
+		grid-column: 1 / 2;
+		max-width: 340px;
+	}
+
+	.tasks {
+	    grid-column: 2 / 5;
+	}
+}
+
+@media (min-width: 1440px) {
+.container {
+    max-width: 1410px;
+}
+.main .grid,
+.grid-4 .grid {
+    grid-gap: 15px!important;
+}
 }
 
 @media (min-width: 1200px) {
 .container {
     max-width: 1600px;
-    box-sizing: content-box;
+
 }
 }
+
+
 
 @media (max-width: 992px) {
 
@@ -203,6 +249,10 @@
 		max-width: 300px;
 		margin: 0 auto 25px;
 	}
+
+	.promotion .item {
+		padding: 25px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -214,9 +264,68 @@
 	.body-orders .menu-orders {
 	    grid-column: 1 / 3;
 	}
+
+	.api {
+		padding: 30px;
+	}
 }
 
 @media (max-width: 520px) {
+
+	.promotion .item {
+	    padding: 15px;
+	}
+
+	.promotion .item .head .img {
+	    margin-right: 15px;
+	}
+
+	.promotion .item .head .img img {
+		width: 55px;
+	}
+
+	.promotion .item .left + img {
+		display: none;
+	}
+
+	.promotion .item .content-descr {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	.promotion .item .head {
+		padding-right: 15px;
+	}
+
+	.promotion .item .content-descr {
+		padding-left: 15px;
+	}
+
+	.promotion .item {
+		margin-bottom: 15px;
+	}
+
+	.api {
+		padding: 30px 15px;
+		    border-radius: 6px;
+	}
+
+	.top .title, .prices .title, .api .title {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+
+	.top .comment-info, .prices .comment-info, .api .comment-info {
+		padding: 20px 15px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.top .comment-info .img, .prices .comment-info .img, .api .comment-info .img {
+	    margin-right: 15px;
+	}
+
+
 	.body-orders .orders {
 	    grid-template-columns: 1fr;
 	    grid-column: 1;
