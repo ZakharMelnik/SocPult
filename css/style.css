@@ -154,7 +154,7 @@ section#cards {
 	margin-bottom: 100px;
 }
 
-.card {
+section#cards .card {
 	background: #FFFFFF;
 	box-shadow: 0px 25px 45px rgba(216, 216, 237, 0.45);
 	border-radius: 12px;
@@ -166,11 +166,11 @@ section#cards {
 	text-align: center;
 }
 
-.card:last-child {
+section#cards .card:last-child {
 	margin-right: 0;
 }
 
-.card:before {
+section#cards .card:before {
 	content: '';
 	background: url(../img/card-points.svg) no-repeat center center;
 	position: absolute;
@@ -181,7 +181,7 @@ section#cards {
 	display: block;
 }
 
-.card:after {
+section#cards .card:after {
 	content: '';
 	background: url(../img/card-points.svg) no-repeat center center;
 	position: absolute;
@@ -192,7 +192,7 @@ section#cards {
 	display: block;
 }
 
-.card .img {
+section#cards .card .img {
 	height: 250px;
 	background: url(../img/card-img.svg) no-repeat center center;
 	display: flex;
@@ -201,7 +201,7 @@ section#cards {
 }
 
 
-.card .title {
+section#cards .card .title {
 	font-family: Gilroy-Bold;
 	font-style: normal;
 	font-size: 18px;
@@ -214,7 +214,7 @@ section#cards {
 	justify-content: center;
 }
 
-.card .title:before {
+section#cards .card .title:before {
 	content: '';
 	position: absolute;
 	bottom: -17px;
@@ -226,11 +226,11 @@ section#cards {
 	display: block;
 }
 
-.card .title:after {
+section#cards .card .title:after {
 	content: 
 }
 
-.card .descr {
+section#cards .card .descr {
 	font-family: Gilroy;
 	font-style: normal;
 	font-weight: 500;
@@ -1017,7 +1017,7 @@ header {
 	border-radius: 18px;
 	background: #fff;
 	grid-column: 2 / 5;
-	grid-row: 1 / 3;
+	grid-row: 1 / 4;
 	padding: 35px 0 70px;
 	position: relative;
 }
@@ -1040,15 +1040,6 @@ header {
 	line-height: 22px;
 	color: #000000;
 	margin-bottom: 15px;
-}
-
-.settings hr {
-	background: linear-gradient(90deg, #7449E6 0.06%, #69A4FF 98.49%);
-	border-radius: 100px;
-	width: 25px;
-	height: 3px;
-	margin: 0;
-	margin-bottom: 30px;
 }
 
 .settings label {
@@ -1360,4 +1351,284 @@ header {
 .navigation ul li a:hover {
 	background: #F1F1FE;
 	box-shadow: 0px 6px 15px rgba(224, 224, 249, 0.15);
+}
+
+.support {
+	background: #FFFFFF;
+	box-shadow: 0px 5px 65px rgba(212, 212, 239, 0.45);
+	border-radius: 18px;
+	padding: 40px 44px;
+	grid-column: 2 / 5;
+	grid-row: 1 / 3;
+}
+
+.support .title {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #000000;
+	margin-bottom: 15px;
+}
+
+.accordion {
+	margin-bottom: 40px;
+}
+
+.accordion>.card {
+	background: #F2F0FB;
+	border-radius: 6px!important;
+	border: none;
+	margin-bottom: 15px;
+}
+
+.accordion>.card .card-header {
+	padding: 15px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #F2F0FB;
+}
+
+.accordion .left {
+	display: flex;
+	margin-right: 20px;
+}
+
+.accordion .circle {
+	background: linear-gradient(40.62deg, #6B75E3 25.96%, #72A4F3 80.15%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 20px;
+
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: right;
+	color: #FFFFFF;
+}
+
+.accordion .btn-link {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #343048;
+	text-decoration: none;
+	padding: 0;
+	text-align: left;
+}
+
+.accordion .btn-show {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #BEB9D5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: #E4E0F7;
+	border-radius: 100px;
+	padding: 12px 20px;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.accordion .btn-show img {
+	margin-left: 10px;
+}
+
+.accordion .card-body {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	color: #9797BF;
+}
+
+.support .not-found {
+	margin: 0 auto;
+	max-width: 240px;
+	text-align: center;
+}
+
+.message-field {
+	position: relative;
+}
+
+.message-field textarea {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: right;
+	color: ##343048;
+
+	background: #F2F0FB;
+	border-radius: 6px;
+	padding: 30px 250px 30px 35px;
+	border: none;
+	width: 100%;
+	text-align: left;
+	min-height: 100px;
+
+}
+
+.message-field textarea::placeholder {
+	color: #CBC7DE;
+}
+
+.message-field button {
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+
+}
+
+.message-history {
+	height: 500px;
+	overflow-y: auto;
+	margin-bottom: 15px;
+	padding-right: 15px;
+}
+
+/* width */
+.message-history::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.message-history::-webkit-scrollbar-track {
+  background: #F2F0FB;
+  border-radius: 100px;
+}
+ 
+/* Handle */
+.message-history::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #6C7EE6 0.06%, #719FF2 98.49%);
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+.message-history::-webkit-scrollbar-thumb:hover {
+  background: #6C7EE6; 
+}
+
+.my-message,
+.operator-message {
+	display: flex;
+	align-items: center;
+	margin-bottom: 68px;
+	position: relative;
+}
+
+.my-message {
+	justify-content: flex-end;
+}
+
+.my-message .circle,
+.operator-message .circle  {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background: #FEC23C;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.operator-message .circle {
+	background: linear-gradient(180deg, #707FE5 0%, #71A1F2 100%);
+	box-shadow: 0px 8px 35px rgba(112, 138, 233, 0.25);
+}
+
+.my-message .message,
+.operator-message .message {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #B9B4D8;
+
+	background: #F2F0FB;
+	border-radius: 6px;
+	padding: 18px 22px;
+	position: relative;
+}
+
+.my-message .message {
+	margin-right: 24px;
+}
+.operator-message .message {
+	margin-left: 24px;
+}
+
+.my-message .message:after {
+	content: '';
+	position: absolute;
+	border: 12px solid transparent;
+	border-left: 12px solid #f2f0fb;
+	right: -24px;
+	top: 15.5px;
+}
+
+.operator-message .message:before {
+	content: '';
+	position: absolute;
+	border: 12px solid transparent;
+	border-right: 12px solid #f2f0fb;
+	left: -24px;
+	top: 15.5px;
+}
+
+.my-message .message + .date,
+.operator-message .message + .date {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: right;
+	color: #BDB8DA;
+	position: absolute;
+	right: 79px;
+	bottom: -33px;
+}
+
+.operator-message .message + .date {
+	right: inherit;
+	left: 79px;
+}
+
+.help {
+	background: #FFFFFF;
+	box-shadow: 0px 6px 15px rgba(224, 224, 249, 0.15);
+	border-radius: 6px;
+	text-align: center;
+	padding: 25px 40px;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.help .title {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #B7BBDF;
+	margin-bottom: 20px;
+}
+
+.help a.btn-blue {
+	width: 100%;
 }

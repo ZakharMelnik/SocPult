@@ -1,5 +1,37 @@
 @media (max-width: 1200px) {
 
+
+
+	.body-support .status,
+	.body-prices .status,
+	.body-top .status {
+		display: none;
+	}
+
+	.support {
+		padding: 30px;
+	}
+
+	.my-message .circle, .operator-message .circle {
+		min-width: 55px;
+	}
+
+	.accordion .left {
+		margin-right: 20px;
+	}
+
+	.accordion .circle {
+		display: none;
+	}
+
+	.accordion .btn-show {
+		white-space: nowrap;
+	}
+
+	.body-faq .status {
+		display: none;
+	}
+
 	.grid-4 .grid {
 	    grid-template-columns: 1fr;
 	}
@@ -227,6 +259,20 @@
 
 @media (max-width: 992px) {
 
+	.top, .prices, .api {
+		padding: 30px;
+	}
+
+	.accordion .btn-link {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.accordion .card-body {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
 	.task-selection {
 		grid-column: 1;
 		grid-row: 1 / 2;
@@ -337,6 +383,69 @@
 }
 
 @media (max-width: 520px) {
+
+	.tasks.order_3 .link {
+		flex-direction: column;
+		height: auto;
+		align-items: flex-start;
+	}
+
+	.tasks.order_3 .link .left {
+		margin-bottom: 18px;
+	}
+
+	.body-faq .support {
+		padding: 0;
+		background: none;
+		box-shadow: none;
+		grid-column: 1;
+	}
+
+	.body-support .support {
+		grid-column: 1;
+		padding: 20px 15px;
+	}
+
+	.accordion>.card .card-header,
+	.accordion .card-body {
+		background-color: #fff;
+	}
+
+	.accordion .card-body {
+		font-size: 12px;
+		line-height: 14px;
+		padding: 10px 15px;
+	}
+
+	.message-field textarea {
+		padding: 15px 110px 15px 15px;
+		min-height: 70px;
+	}
+
+	.message-field button {
+		padding: 12px 16px;
+		right: 15px;
+		bottom: 18px;
+	}
+
+	.message-field button img {
+		margin-left: 0;
+	}
+
+	.accordion .btn-link {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	.accordion .btn-show {
+		font-size: 0;
+		padding: 0;
+		background: none;
+	}
+
+	.accordion .btn-show img {
+		margin-left: 0;
+	}
 
 	.promotion .item {
 	    padding: 15px;
@@ -539,6 +648,15 @@
 
 	body.main .info-block .orders span {
 		display: none;
+	}
+
+	.message-field button {
+		font-size: 0;
+	}
+
+	.my-message .message, .operator-message .message {
+		font-size: 12px;
+		line-height: 15px;
 	}
 
 }
