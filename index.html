@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <title>SocPult</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Cache-Control" content="max-age=31557600" />
   <link rel="shortcut icon" href="img/logo.png" type="image/png">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/assets.css">
-  <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
-  
 </head>
 
 <body class="main">
@@ -371,20 +367,20 @@
 <form id="register-popup" class="mfp-hide white-popup-block" action="mail.php" method="POST">
   <div class="title">Регистрация</div>
 
-  <div id="input-section">
-    <label for="">Адрес электронной почты</label>
-    <input type="text" placeholder="email@address.com" required>
+  <div class="input-section">
+    <label for="email">Адрес электронной почты</label>
+    <input type="text" id="email" placeholder="email@address.com" required>
   </div>
 
-  <div id="input-section">
-    <label for="">Пароль</label>
-    <input type="text" placeholder="*******" required>
+  <div class="input-section">
+    <label for="password">Пароль</label>
+    <input type="text" id="password" placeholder="*******" required>
     <a class="button popup-with-form forgot" href="#forgot-popup">Забыли?</a>
   </div>
 
-  <div id="input-section">
-    <label for="">Повторите пароль</label>
-    <input type="text" placeholder="*******" required>
+  <div class="input-section">
+    <label for="forgot">Повторите пароль</label>
+    <input type="text" id="forgot" placeholder="*******" required>
 
     <button type="submit" class="button-send btn-blue">Регистрация</button>
   </div>
@@ -393,27 +389,26 @@
     <div class="title">Уже имеется аккаунт ?</div>
     <a class="button popup-with-form" href="#login-popup">Войти в аккаунт</a>
   </div>
-  
 </form>
 
 <!-- login popup -->
 <form id="login-popup" class="mfp-hide white-popup-block" action="mail.php" method="POST">
   <div class="title">Вход в кабинет</div>
 
-  <div id="input-section">
-    <label for="">Адрес электронной почты</label>
-    <input type="text" placeholder="email@address.com" required>
+  <div class="input-section">
+    <label for="email2">Адрес электронной почты</label>
+    <input type="text" id="email2" placeholder="email@address.com" required>
   </div>
 
-  <div id="input-section">
-    <label for="">Пароль</label>
-    <input type="text" placeholder="*******" required>
+  <div class="input-section">
+    <label for="password2">Пароль</label>
+    <input type="text" id="password2" placeholder="*******" required>
     <a class="button popup-with-form forgot" href="#forgot-popup">Забыли?</a>
   </div>
 
-  <div id="input-section">
-    <label for="">Войти через</label>
-    <input type="text" placeholder="*******" required>
+  <div class="input-section">
+    <label for="forgot2">Войти через</label>
+    <input type="text" id="forgot2">
 
     <button type="submit" class="button-send btn-blue">Войти</button>
   </div>
@@ -422,16 +417,15 @@
     <div class="title">Еще нет аккаунта?</div>
     <a class="button popup-with-form" href="#register-popup">Создать аккаунт</a>
   </div>
-  
 </form>
 
-<!-- login popup -->
+<!-- forgot popup -->
 <form id="forgot-popup" class="mfp-hide white-popup-block" action="mail.php" method="POST">
   <div class="title">Сброс пароля</div>
 
-  <div id="input-section">
-    <label for="">Адрес электронной почты</label>
-    <input type="text" placeholder="email@address.com" required>
+  <div class="input-section">
+    <label for="email3">Адрес электронной почты</label>
+    <input type="text" id="email3" placeholder="email@address.com" required>
     <button type="submit" class="button-send btn-blue">Войти</button>
   </div>
 
@@ -439,7 +433,6 @@
     <div class="title">Еще нет аккаунта?</div>
     <a class="button popup-with-form" href="#register-popup">Создать аккаунт</a>
   </div>
-  
 </form>
 
 
@@ -447,7 +440,6 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/slick.min.js"></script>
   <script src="js/jquery.magnific-popup.js"></script>
   <script src="https://aishek.github.io/jquery-animateNumber/javascripts/jquery.animateNumber.js"></script>
 

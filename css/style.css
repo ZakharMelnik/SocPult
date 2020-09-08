@@ -105,8 +105,14 @@
 	position: absolute;
 	width: 1076px;
 	height: 1054px;
-	-webkit-animation: pulsing 4s infinite;
+	-webkit-animation: rotate 30s linear infinite;
 	animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 #banner:after {
@@ -139,11 +145,6 @@
 
 #banner .subtitle {
 	margin-bottom: 34px;
-}
-
-@keyframes rotate {
-	to { -webkit-transform: rotate(360deg) }
-
 }
 
 section#cards {
@@ -1117,6 +1118,12 @@ header {
 	display: block;
 	width: 240px;
 	margin: 0 auto 35px;
+	transition: .2s ease-out;
+}
+
+.settings button[type="submit"]:hover {
+	background: linear-gradient(50deg, #6C79E3 0%, #6C79E3 100%);
+	box-shadow: 0px 5px 15px 0px rgba(197, 202, 224, 1);
 }
 
 
@@ -1709,7 +1716,7 @@ header {
 	color: #bac6dd;
 }
 
-.white-popup-block #input-section {
+.white-popup-block .input-section {
 	position: relative;
 }
 
@@ -1775,6 +1782,12 @@ header {
 	display: inline-block;
 	margin: 0 auto;
 	text-align: center;
+	transition: .2s ease-out;
+}
+
+.white-popup-block .account a:hover {
+	background: #C9D7F8;
+	color: #99A5C1;
 }
 
 .table .item {
@@ -2028,8 +2041,6 @@ header {
     height: 20px;
     border: solid white;
     border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
