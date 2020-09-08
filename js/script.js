@@ -1,18 +1,22 @@
 $(document).ready(function() {
 
+	var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
+	$(".main .info-block .animate").each(function() {
+		var tcount = $(this).data("count");
+		$(this).animateNumber({ number: tcount,
+			easing: 'easeInQuad',
+			numberStep: comma_separator_number_step},
+			2000);
+	});
+
+	$(".main .sum .animate").each(function() {
+		var tcount = $(this).data("count");
+		$(this).animateNumber({ number: tcount,
+			easing: 'easeInQuad',
+			numberStep: comma_separator_number_step},
+			2000);
+	});
 	
-	
-/*	// Range init
-	$('.skill-title i').text(start)
-	$('.skill-scale_item').css('width', start+'%')
-	
-	//Range example
-	$('#hueta').change( function() {
-		let fooNuiGavno = $(this).val()
-		$('.skill-title i').text( fooNuiGavno)
-		$('.skill-scale_item').css('width', fooNuiGavno+'%')
-	})
-*/
 
 	/*Header menu*/
 
@@ -165,3 +169,5 @@ function move() {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
+
+

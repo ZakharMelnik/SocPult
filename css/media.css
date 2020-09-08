@@ -1,11 +1,20 @@
 @media (max-width: 1200px) {
 
-	.body-prices .table .item {
+	.checkboxes .item {
+		padding: 30px 20px;
+	}
+
+	/*.body-prices .table .item {
 		justify-content: center;
 	}
 
+	.body-prices .table .item {
+		flex-wrap: wrap;
+	}*/
+
 	.table .item-head .price, .table .item .price, .table .item-head .speed-hour, .table .item .speed-hour, .table .item-head .speed-day, .table .item .speed-day {
-		width: 230px;
+		width: 75px;
+		padding: 0 5px;
 	}
 
 
@@ -215,7 +224,7 @@
 	    grid-column: 2 / 5;
 	}
 
-	.tasks .item {
+	.tasks > .item {
 		width: 600px;
 		height: 100px;
 		padding: 15px;
@@ -267,6 +276,10 @@
 
 @media (max-width: 992px) {
 
+	.table .item-head .descr, .table .item .descr {
+		display: none;
+	}
+
 	.top, .prices, .api {
 		padding: 30px;
 	}
@@ -296,17 +309,17 @@
 	    grid-row: 2 / 3;
 	}
 
-	.tasks .item {
+	.tasks > .item {
 		width: 100%;
 		height: auto;
 		margin-bottom: 15px;
 	}
 
-	.tasks .item .head .img {
+	.tasks > .item .head .img {
 		margin-right: 15px;
 	}
 
-	.tasks .item .head .descr {
+	.tasks > .item .head .descr {
 		font-size: 14px;
 		line-height: 17px;
 	}
@@ -388,9 +401,88 @@
 	.api {
 		padding: 30px;
 	}
+
+	.checkboxes {
+	    grid-gap: 15px;
+	}
+
+	.checkboxes .item {
+	    padding: 20px 15px;
+	}
+
+	.container-checkbox {
+		padding-left: 35px;
+		margin-right: 10px;
+	}
+
+	.checkmark {
+		width: 35px;
+		height: 35px;
+	}
+
+	.container-checkbox .checkmark:after {
+		width: 5px;
+		height: 10px;
+		left: 14px;
+		top: 10px;
+	}
+
+	.checkboxes .item .title {
+	    font-size: 14px;
+	    line-height: 16px;
+	}
+
+	.checkboxes .item .descr {
+	    font-size: 12px;
+	    line-height: 14px;
+	}
+
+	.checkboxes .item .price {
+		padding: 8px 15px;
+		white-space: nowrap;
+	}
+
+	.tasks.order_3 .link {
+		margin-bottom: 15px;
+	}
 }
 
 @media (max-width: 520px) {
+
+	.table .item-head .service, .table .item-head .descr, .table .item-head .price, .table .item-head .speed-hour, .table .item-head .speed-day {
+		font-size: 12px;
+	}
+
+	.table .item-head .price, .table .item .price, .table .item-head .speed-hour, .table .item .speed-hour, .table .item-head .speed-day, .table .item .speed-day {
+	    width: 70px;
+	}
+
+	.table .item-head .service, .table .item .service {
+		padding-left: 0;
+	}
+
+	.table .item .service, .table .item .price, .table .item .speed-hour, .table .item .speed-day {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	.table .item .service img {
+		max-width: 20px;
+		margin-right: 5px;
+	}
+
+	.table .item-head .service, .table .item .service {
+		width: 142px;
+	}
+
+	.tasks.order_3 .link input {
+	    max-width: none;
+	    width: 100%;
+	}
+
+	.checkboxes {
+	    grid-template-columns: 1fr;
+	}
 
 	.table .item .num, .table .item .user, .table .item .orders, .table .item .executions,
 	.table .item-head .num, .table .item-head .user, .table .item-head .orders, .table .item-head .executions {
@@ -695,7 +787,17 @@
 	}
 
 	.grid-4 .grid {
-		grid-gap: 0!important;
+		grid-gap: 15px 0!important;
+	}
+
+	.table .item .orders {
+		min-width: 50px;
+		text-align: center;
+	}
+
+	.table .item .executions {
+	    min-width: 70px;
+	    text-align: center;
 	}
 
 }
@@ -705,7 +807,9 @@
 }
 
 @media (max-width: 375px) {
-
+	.table .item-head .service, .table .item .service {
+		width: 110px;
+	}
 }
 
 @media (max-width: 320px) {
