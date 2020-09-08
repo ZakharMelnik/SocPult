@@ -361,7 +361,87 @@
     </div>
 
   </div>
+
+  <a class="button popup-with-form" href="#register-popup">register</a>
 </div>
+
+
+
+<!-- register popup -->
+<form id="register-popup" class="mfp-hide white-popup-block" action="mail.php" method="POST">
+  <div class="title">Регистрация</div>
+
+  <div id="input-section">
+    <label for="">Адрес электронной почты</label>
+    <input type="text" placeholder="email@address.com" required>
+  </div>
+
+  <div id="input-section">
+    <label for="">Пароль</label>
+    <input type="text" placeholder="*******" required>
+    <a class="button popup-with-form forgot" href="#forgot-popup">Забыли?</a>
+  </div>
+
+  <div id="input-section">
+    <label for="">Повторите пароль</label>
+    <input type="text" placeholder="*******" required>
+
+    <button type="submit" class="button-send btn-blue">Регистрация</button>
+  </div>
+
+  <div class="account">
+    <div class="title">Уже имеется аккаунт ?</div>
+    <a class="button popup-with-form" href="#login-popup">Войти в аккаунт</a>
+  </div>
+  
+</form>
+
+<!-- login popup -->
+<form id="login-popup" class="mfp-hide white-popup-block" action="mail.php" method="POST">
+  <div class="title">Вход в кабинет</div>
+
+  <div id="input-section">
+    <label for="">Адрес электронной почты</label>
+    <input type="text" placeholder="email@address.com" required>
+  </div>
+
+  <div id="input-section">
+    <label for="">Пароль</label>
+    <input type="text" placeholder="*******" required>
+    <a class="button popup-with-form forgot" href="#forgot-popup">Забыли?</a>
+  </div>
+
+  <div id="input-section">
+    <label for="">Войти через</label>
+    <input type="text" placeholder="*******" required>
+
+    <button type="submit" class="button-send btn-blue">Войти</button>
+  </div>
+
+  <div class="account">
+    <div class="title">Еще нет аккаунта?</div>
+    <a class="button popup-with-form" href="#register-popup">Создать аккаунт</a>
+  </div>
+  
+</form>
+
+<!-- login popup -->
+<form id="forgot-popup" class="mfp-hide white-popup-block" action="mail.php" method="POST">
+  <div class="title">Сброс пароля</div>
+
+  <div id="input-section">
+    <label for="">Адрес электронной почты</label>
+    <input type="text" placeholder="email@address.com" required>
+    <button type="submit" class="button-send btn-blue">Войти</button>
+  </div>
+
+  <div class="account">
+    <div class="title">Еще нет аккаунта?</div>
+    <a class="button popup-with-form" href="#register-popup">Создать аккаунт</a>
+  </div>
+  
+</form>
+
 
 
   <script src="js/jquery.min.js"></script>

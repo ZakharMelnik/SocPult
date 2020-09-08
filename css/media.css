@@ -1,5 +1,13 @@
 @media (max-width: 1200px) {
 
+	.body-prices .table .item {
+		justify-content: center;
+	}
+
+	.table .item-head .price, .table .item .price, .table .item-head .speed-hour, .table .item .speed-hour, .table .item-head .speed-day, .table .item .speed-day {
+		width: 230px;
+	}
+
 
 
 	.body-support .status,
@@ -384,6 +392,33 @@
 
 @media (max-width: 520px) {
 
+	.table .item .num, .table .item .user, .table .item .orders, .table .item .executions,
+	.table .item-head .num, .table .item-head .user, .table .item-head .orders, .table .item-head .executions {
+		flex: 0;
+	}
+
+	.table .item-head .num, .table .item-head .user, .table .item-head .orders, .table .item-head .executions {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	.table .item .user {
+	    display: flex;
+	    align-items: center;
+	}
+
+	.top, .prices, .api {
+		padding: 30px 15px;
+	}
+
+	.white-popup-block .account a {
+		padding: 20px 40px;
+	}
+
+	.white-popup-block {
+		padding: 30px 15px;
+	}
+
 	.tasks.order_3 .link {
 		flex-direction: column;
 		height: auto;
@@ -657,6 +692,10 @@
 	.my-message .message, .operator-message .message {
 		font-size: 12px;
 		line-height: 15px;
+	}
+
+	.grid-4 .grid {
+		grid-gap: 0!important;
 	}
 
 }

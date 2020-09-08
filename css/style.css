@@ -1261,7 +1261,7 @@ header {
 	border-radius: 18px;
 	padding: 40px 44px;
 	grid-column: 2 / 5;
-	grid-row: 1 / 3;
+	grid-row: 1 / 4;
 }
 
 .top .title,
@@ -1631,4 +1631,248 @@ header {
 
 .help a.btn-blue {
 	width: 100%;
+}
+
+.white-popup-block {
+	background: #FFFFFF;
+	box-shadow: 0px 15px 65px rgba(197, 202, 224, 0.25);
+	border-radius: 18px;
+	max-width: 540px;
+	margin: 0 auto;
+	padding: 56px 70px 52px;
+	position: relative;
+}
+
+.white-popup-block .title {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	color: #292933;
+	margin-bottom: 48px;
+}
+
+.white-popup-block label {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+	color: #292933;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.white-popup-block input {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+	color: #292933;
+
+	background: #E4EBFD;
+	box-shadow: 0px 20px 20px rgba(228, 235, 253, 0.4);
+	border-radius: 100px;
+	padding: 24px 35px;
+	border: none;
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	height: 70px;
+}
+
+.white-popup-block input::placeholder {
+	color: #bac6dd;
+}
+
+.white-popup-block #input-section {
+	position: relative;
+}
+
+.white-popup-block .forgot {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	color: #bac6dd;
+	position: absolute;
+	bottom: 25px;
+	right: 35px;
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: #E2EBFF!important;
+    opacity: 1!important;
+    font-size: 38px!important;
+    top: 20px;
+    right: 20px;
+}
+
+.white-popup-block button {
+	padding: 15px 35px;
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+}
+
+.white-popup-block .account {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 45px;
+}
+
+.white-popup-block .account .title {
+	font-family: Gilroy!important;
+	font-style: normal!important;
+	font-weight: 600!important;
+	font-size: 18px!important;
+	line-height: 21px!important;
+	text-align: center!important;
+	color: #292933!important;
+	margin-bottom: 25px !important;
+}
+
+.white-popup-block .account a {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #AAB5CD;
+
+	padding: 24px 50px;
+	background: #E1E9FB;
+	box-shadow: 0px 20px 20px rgba(225, 233, 251, 0.25);
+	border-radius: 100px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.table .item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 0;
+	border-bottom: 1px solid #EDEFFF;
+}
+
+.table .item .num,
+.table .item .user,
+.table .item .orders,
+.table .item .executions {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+	flex: 1;
+
+}
+
+.table .item-head .num,
+.table .item .num {
+	max-width: 100px
+}
+
+.table .item .user {
+
+}
+
+.table .item .user img {
+	margin-right: 5px;
+}
+
+.table .item .orders {
+
+}
+
+.table .item .executions {
+
+}
+
+.table .item-head .num,
+.table .item-head .user,
+.table .item-head .orders,
+.table .item-head .executions {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #C9C9E7;
+	flex: 1;
+}
+
+.table .item .service,
+.table .item .price,
+.table .item .speed-hour,
+.table .item .speed-day {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+}
+
+.table .item-head .service,
+.table .item .service {
+	width: 170px;
+}
+
+.table .item .descr {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 14px;
+	color: #9797BF;
+}
+
+.table .item-head .descr,
+.table .item .descr {
+	width: 375px;
+}
+
+.table .item-head .price,
+.table .item .price,
+.table .item-head .speed-hour,
+.table .item .speed-hour,
+.table .item-head .speed-day,
+.table .item .speed-day {
+	width: 120px;
+	text-align: center;
+}
+
+.table .item-head .service,
+.table .item-head .descr,
+.table .item-head .price,
+.table .item-head .speed-hour,
+.table .item-head .speed-day {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #C9C9E7;
+}
+
+.table .item-service {
+	justify-content: flex-start;
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+}
+
+.table .item-service img {
+	margin-right: 10px;
 }
