@@ -2177,6 +2177,10 @@ header {
 	margin: 0 auto 30px;
 }
 
+#land-grid .grid .item-1 .img {
+	margin-bottom: 0;
+}
+
 #land-grid .grid .item .title {
 	font-family: Gilroy-Bold;
 	font-style: normal;

@@ -554,6 +554,171 @@
 
 @media (max-width: 520px) {
 
+	.header {
+		padding: 20px 15px 0;
+		justify-content: space-between;
+	}
+
+	.header .header-logo {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.header .header-logo img {
+		width: 30px;
+	}
+
+
+
+	.header a.btn {
+    	padding: 14px 50px 14px 25px;
+    	margin-right: 0;
+	}
+
+	#banner h1 {
+	    font-size: 32px;
+	    line-height: 38px;
+	}
+
+	#banner .subtitle {
+	    font-size: 16px;
+	    line-height: 22px;
+	}
+
+	.header ul.header-links {
+		display: none;
+	}
+
+	#banner h1 {
+	    margin-top: 50px;
+	}
+
+	section#cards {
+		flex-direction: column;
+	}
+
+	section#cards .card {
+		max-width: 300px;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	#now .descr {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	#now .title,
+	#functions .title {
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+
+	#functions .descr {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	#banner .subtitle + a.btn {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	#land-grid .grid {
+	    grid-template-columns: 1fr;
+	}
+
+	#land-grid .grid .item {
+		grid-column: 1!important;
+		padding: 30px;
+		min-height: inherit;
+	}
+
+	#land-grid {
+	    margin-bottom: 50px;
+	}
+
+	#land-grid .grid .item-1 {
+		grid-row: 1/2;
+	}
+
+	#land-grid .grid .item-2 {
+		grid-row: 2/3;
+	}
+
+	#land-grid .grid .item-3 {
+		grid-row: 3/4;
+	}
+
+	#land-grid .grid .item-4 {
+		grid-row: 4/5;
+	}
+
+	#land-grid .grid .item-5 {
+		grid-row: 5/6;
+	}
+
+	#land-grid .grid .item-6 {
+		grid-row: 6/7;
+	}
+
+	#land-grid .grid .img img {
+		max-width: 280px;
+	}
+
+	#land-grid .grid .item-1 .img {
+		margin-bottom: 0;
+	}
+
+	#land-grid .grid .item-6 .img {
+		position: static;
+	}
+
+	#land-grid .grid .item .title {
+		font-size: 20px;
+		line-height: 22px;
+	}
+
+	#land-grid .grid .item .descr {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	#land-grid .grid .item .btn-now {
+		margin-bottom: 20px;
+	}
+
+	#banner:after {
+		display: none;
+	}
+
+	footer {
+		padding: 25px 0 5px;
+	}
+
+	footer .container {
+		flex-direction: column;
+	}
+
+	footer .footer-logo {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	footer .footer-text .mail {
+		margin-bottom: 30px;
+		color: #000;
+	}
+
+	footer .footer-text {
+		flex-direction: column;
+	}
+
+	footer .footer-text .copyright {
+		font-size: 12px;
+		color: #afaaca;
+	}
+
 	.table .item-head .service, .table .item-head .descr, .table .item-head .price, .table .item-head .speed-hour, .table .item-head .speed-day {
 		font-size: 12px;
 	}
