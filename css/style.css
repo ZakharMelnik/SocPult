@@ -1858,6 +1858,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	margin-bottom: 40px;
 }
 
 .white-popup-block .or a {
@@ -1886,6 +1887,10 @@ header {
 	position: absolute;
 	bottom: 25px;
 	right: 35px;
+}
+
+.white-popup-block .or .payment-logo img {
+	width: 100%;
 }
 
 .mfp-close-btn-in .mfp-close {
@@ -1973,20 +1978,16 @@ header {
 	max-width: 100px
 }
 
-.table .item .user {
-
-}
-
 .table .item .user img {
 	margin-right: 5px;
 }
 
-.table .item .orders {
-
-}
-
-.table .item .executions {
-
+.table .item .id {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
 }
 
 .table .item-head .num,
@@ -2016,7 +2017,6 @@ header {
 .table .item-head .service,
 .table .item .service {
 	width: 200px;
-	padding-left: 20px;
 }
 
 .table .item .service img {
@@ -2051,7 +2051,8 @@ header {
 .table .item-head .descr,
 .table .item-head .price,
 .table .item-head .speed-hour,
-.table .item-head .speed-day {
+.table .item-head .speed-day,
+.table .item-head .id {
 	font-family: Gilroy;
 	font-style: normal;
 	font-weight: 600;
@@ -2072,6 +2073,8 @@ header {
 .table .item-service img {
 	margin-right: 10px;
 }
+
+
 
 
 .checkboxes {

@@ -731,9 +731,13 @@
 		padding-left: 0;
 	}
 
-	.table .item .service, .table .item .price, .table .item .speed-hour, .table .item .speed-day {
+	.table .item .service, .table .item .price, .table .item .speed-hour, .table .item .speed-day, .table .item-head .id, .table .item .id {
 		font-size: 12px;
 		line-height: 14px;
+	}
+
+	.table .item .id {
+		margin-right: 10px;
 	}
 
 	.table .item .service img {
