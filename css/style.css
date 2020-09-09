@@ -2239,6 +2239,11 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     min-height: 340px;
+    transition: .2s ease-out;
+}
+
+#land-grid .grid .item:hover {
+	box-shadow: 0px 5px 10px 0px #D8D8E9;
 }
 
 #land-grid .grid .item .img {
