@@ -38,7 +38,7 @@ $(document).ready(function() {
 		$(this).animateNumber({ number: tcount,
 			easing: 'easeInQuad',
 			numberStep: comma_separator_number_step},
-			2000);
+			500);
 	});
 
 	$(".main .sum .animate").each(function() {
@@ -46,7 +46,7 @@ $(document).ready(function() {
 		$(this).animateNumber({ number: tcount,
 			easing: 'easeInQuad',
 			numberStep: comma_separator_number_step},
-			2000);
+			500);
 	});
 
 

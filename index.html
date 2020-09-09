@@ -359,6 +359,9 @@
   </div>
 
   <a class="button popup-with-form" href="#register-popup">register</a>
+  <a class="button popup-with-form" href="#login-popup">login</a>
+  <a class="button popup-with-form" href="#forgot-popup">forgot</a>
+  <a class="button popup-with-form" href="#payment-popup">payment</a>
 </div>
 
 
@@ -410,6 +413,12 @@
     <label for="forgot2">Войти через</label>
     <input type="text" id="forgot2">
 
+    <div class="links-login">
+      <a href="#"><img src="img/icons/popup-facebook.svg" alt=""></a>
+      <a href="#"><img src="img/icons/popup-vk.svg" alt=""></a>
+      <a href="#"><img src="img/icons/popup-google.svg" alt=""></a>
+    </div>
+
     <button type="submit" class="button-send btn-blue">Войти</button>
   </div>
 
@@ -427,6 +436,31 @@
     <label for="email3">Адрес электронной почты</label>
     <input type="text" id="email3" placeholder="email@address.com" required>
     <button type="submit" class="button-send btn-blue">Войти</button>
+  </div>
+
+  <div class="account">
+    <div class="title">Еще нет аккаунта?</div>
+    <a class="button popup-with-form" href="#register-popup">Создать аккаунт</a>
+  </div>
+</form>
+
+<!-- payment popup -->
+<form id="payment-popup" class="mfp-hide white-popup-block" action="mail.php" method="POST">
+  <div class="title">Оплата</div>
+
+  <div class="input-section">
+    <label for="payment">Укажите сумму</label>
+    <input type="text" id="payment" placeholder="Сумма в рублях" required="">
+
+    <button type="submit" class="button-send btn-blue">Оплатить картой</button>
+  </div>
+
+  <div class="or">
+    <div class="title">Или</div>
+    <div class="btns">
+      <a href="#"><img src="img/payeer.png" alt=""></a>
+      <a href="#"><img src="img/qiwi.png" alt=""></a>
+    </div>
   </div>
 
   <div class="account">

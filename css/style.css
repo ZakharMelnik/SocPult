@@ -710,6 +710,11 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding: 25px;
+	transition: .2s ease-out;
+}
+
+.info-block:hover {
+	    box-shadow: 0px 5px 10px 0px #D8D8E9;
 }
 
 .info-block .orders {
@@ -775,6 +780,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 25px;
+	transition: .2s ease-out;
 }
 
 .last-orders .item .service {
@@ -1298,6 +1304,11 @@ header {
 	height: min-content;
 	position: relative;
 	padding: 16px 18px;
+	transition: .2s ease-out;
+}
+
+.orders .order:hover {
+	box-shadow: 0px 5px 10px 0px #D8D8E9;
 }
 
 .orders .order .order-close {
@@ -1811,6 +1822,60 @@ header {
 	position: relative;
 }
 
+.links-login {
+	display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.links-login a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	background: #D4DDF0;
+	box-shadow: 0px 20px 20px rgba(231, 231, 255, 0.25);
+	border-radius: 100px;
+}
+
+.links-login a:not(:last-of-type) {
+	margin-right: 10px;
+}
+
+.white-popup-block .or .title {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #2A2B31;
+	margin-bottom: 20px;
+}
+
+
+.white-popup-block .or .btns {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.white-popup-block .or a {
+	background: #E2EBFF;
+	box-shadow: 0px 20px 20px rgba(226, 235, 255, 0.25);
+	border-radius: 6px;
+	width: 190px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .2s ease-out;
+}
+
+.white-popup-block .or a:hover {
+	background: #C9D7F8;
+}
+
 .white-popup-block .forgot {
 	font-family: Gilroy;
 	font-style: normal;
@@ -1878,7 +1943,7 @@ header {
 
 .white-popup-block .account a:hover {
 	background: #C9D7F8;
-	color: #99A5C1;
+	color: #677492;
 }
 
 .table .item {
