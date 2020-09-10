@@ -141,6 +141,7 @@
     </a>
 
     <div class="tasks order_3">
+      <div class="tasks-input">
         <div class="link">
           <div class="left">
             <div class="img"><img src="img/icons/link.svg" alt="link"></div>
@@ -150,9 +151,20 @@
             </div>
           </div>
 
-          <input type="text" placeholder="https://vk.com/wall...">
+          <input type="text" placeholder="https://vk.com/wall..." required="">
         </div>
 
+        <div class="link">
+          <div class="left">
+            <div class="text">
+              <div class="title">Количество лайков</div>
+              <div class="descr">На зпись, фотографию или видео</div> 
+            </div>
+          </div>
+
+          <input type="number" placeholder="от 10 до 50000" min="10" max="50000" step="10" required="">
+        </div>
+      </div>
 
           <!-- <div class="checkboxes">
             <div class="item">

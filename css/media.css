@@ -1,3 +1,32 @@
+@media (max-width: 1440px){
+	.tasks-input {
+		flex-direction: column;
+	}	
+	.tasks.order_3 .link .img {
+		display: none;
+	}
+
+	.tasks-input {
+		box-shadow: 0px 0px 15px rgba(219, 219, 239, 0.65);
+		padding: 25px;
+		background: #fff;
+		border-radius: 18px;
+		margin-bottom: 25px;
+	}
+
+	.tasks.order_3 .link {
+		margin-right: 0;
+		border-radius: 0;
+		padding: 0;
+		box-shadow: none;
+		margin-bottom: 25px;
+	}
+
+	.tasks.order_3 .link:last-child {
+		margin-bottom: 0;
+	}
+}
+
 @media (max-width: 1200px) {
 
 	.promotion .item {
@@ -301,6 +330,10 @@
 	    grid-column: 2 / 5;
 	}
 
+	.tasks-input {
+		width: 600px;
+	}
+
 	.tasks > .item {
 		width: 600px;
 		height: 100px;
@@ -308,18 +341,14 @@
 	}
 
 	.tasks.order_3 .link {
-		padding: 15px;
-		width: 600px;
-		height: 100px;
+		align-items: center;
 	}
 
 	.tasks.order_3 .link .left {
-		margin-right: 15px;
+		margin-right: 0;
+		width: 300px;
 	}
 
-	.tasks.order_3 .link .img {
-		margin-right: 15px;
-	}
 
 	.tasks.order_3 .link .descr {
 		font-size: 14px;
@@ -352,6 +381,10 @@
 
 
 @media (max-width: 992px) {
+
+	.tasks-input {
+	    width: 100%;
+	}
 
 	.main .help {
 		display: none;
@@ -778,7 +811,7 @@
 	}
 
 	.tasks.order_3 .link input {
-	    max-width: none;
+	    max-width: 100%;
 	    width: 100%;
 	}
 
