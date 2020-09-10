@@ -19,7 +19,7 @@ body {
 	background-color: #F6F6FA;
 	font-family: Gilroy;
 	width: 100%;
-	overflow-x: hidden;
+	-overflow-x: hidden;
 	margin: 0;
 }
 

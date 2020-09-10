@@ -29,6 +29,14 @@
 
 @media (max-width: 1200px) {
 
+	.body-top .help {
+		display: none;
+	}
+
+	.top, .prices, .api {
+		grid-column: 1;
+	}
+
 	.promotion .item {
 		height: 100px;
 	}
@@ -988,6 +996,7 @@
 	header {
 		position: fixed;
 		z-index: 1;
+		top: 0;
 	}
 
 	.container-header .links {
@@ -1089,7 +1098,7 @@
 	}
 
 	body.main .last-orders .item:nth-child(even) {
-		margin-right: 15px;
+		margin-right: 10px;
 	}
 
 	body.main .last-orders .item .td .descr, .last-orders .item .service .id, .last-orders .item .service .descr {
@@ -1134,6 +1143,20 @@
 	    min-width: 70px;
 	    text-align: center;
 	}
+
+	.table .item-head {
+		top: 60px;
+	}
+
+	.white-popup-block input {
+		font-size: 14px;
+	}
+
+	.table .item-head .num, .table .item-head .user, .table .item-head .orders, .table .item-head .executions {
+		color: #000;
+	}
+
+
 
 }
 

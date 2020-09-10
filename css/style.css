@@ -853,6 +853,7 @@ header {
 	bottom: 0;
 	background: #F5F5FA;
 	display: none;
+	overflow-y: auto;
 }
 
 .mobile-menu.show {
@@ -2054,6 +2055,13 @@ header {
 	border-bottom: 1px solid #EDEFFF;
 }
 
+.table .item-head {
+	position: sticky;
+	top: 0;
+	background: #fff;
+	border-bottom: 1px solid #000;
+}
+
 .table .item .num,
 .table .item .user,
 .table .item .orders,
@@ -2083,6 +2091,7 @@ header {
 	font-size: 14px;
 	line-height: 17px;
 	color: #000000;
+	margin-right: 10px;
 }
 
 .table .item-head .num,
@@ -2180,7 +2189,7 @@ header {
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 17px;
-	color: #C9C9E7;
+	color: #000;
 }
 
 .table .item-service {
@@ -2484,3 +2493,4 @@ footer .footer-text .design span {
 .body-top .help {
 	grid-row: 2 / 3;
 }
+
