@@ -1,5 +1,9 @@
 @media (max-width: 1200px) {
 
+	.promotion .item {
+		height: 100px;
+	}
+
 	#banner:before {
 		top: -450px;
 	    left: -400px;
