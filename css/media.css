@@ -349,6 +349,14 @@
 
 @media (max-width: 992px) {
 
+	.main .help {
+		display: none;
+	}
+
+	.status a.btn-grey {
+		max-width: 300px;
+	}
+
 	#banner h1 {
 		margin-top: 150px;
 	}
@@ -719,21 +727,37 @@
 		color: #afaaca;
 	}
 
-	.table .item-head .service, .table .item-head .descr, .table .item-head .price, .table .item-head .speed-hour, .table .item-head .speed-day {
+	.table .item-head .service, .table .item-head .descr, .table .item-head .price, .table .item-head .launch-status {
 		font-size: 12px;
 	}
 
-	.table .item-head .price, .table .item .price, .table .item-head .speed-hour, .table .item .speed-hour, .table .item-head .speed-day, .table .item .speed-day {
+	.table .item-head .price, .table .item .price {
 	    width: 70px;
+	}
+
+	.table .item-head .launch-status, .table .item .launch-status {
+		width: 110px;
 	}
 
 	.table .item-head .service, .table .item .service {
 		padding-left: 0;
 	}
 
-	.table .item .service, .table .item .price, .table .item .speed-hour, .table .item .speed-day, .table .item-head .id, .table .item .id {
+	.table .item .service, .table .item .price, .table .item .launch-status, .table .item-head .id, .table .item .id {
 		font-size: 12px;
 		line-height: 14px;
+	}
+
+	.launch-status .fast {
+		padding: 5px 10px;
+	}
+
+	.table .item-head .launch-status {
+		margin-right: 10px;
+	}
+
+	.table .item .launch-status {
+		text-align: center;
 	}
 
 	.table .item .id {
