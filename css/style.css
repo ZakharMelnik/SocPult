@@ -2494,3 +2494,53 @@ footer .footer-text .design span {
 	grid-row: 2 / 3;
 }
 
+.api .heading {
+	font-family: Gilroy-Bold;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EBEDF0;
+}
+
+.api .subtitle {
+	font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EBEDF0;
+}
+
+.api .descr {
+	font-family: Gilroy;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.api ul {
+	margin-left: 20px;
+}
+
+.api ul>li {
+	margin-bottom: 10px;
+	list-style-type: disc;
+}
+
+.api ul>li span {
+	font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+}	
+
+.api a {
+	color: #3F79D9;
+}

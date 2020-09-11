@@ -1156,6 +1156,16 @@
 		color: #000;
 	}
 
+	.api .heading {
+		font-size: 28px;
+		line-height: 32px;
+	}
+
+	.api .subtitle {
+		font-size: 18px;
+		line-height: 21px;
+	}
+
 
 
 }
