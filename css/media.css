@@ -28,7 +28,6 @@
 }
 
 @media (max-width: 1200px) {
-
 	.body-top .help {
 		display: none;
 	}
@@ -164,7 +163,7 @@
 	}
 
 	.grid-4 .grid {
-	    grid-template-columns: 1fr;
+	    grid-template-columns: 100%;
 	}
 
 	.body-orders .orders {
@@ -195,7 +194,6 @@
 	.settings input {
 		font-size: 14px;
 		line-height: 17px;
-		padding: 24px 26px;
 	}
 
 	.balance,
@@ -390,6 +388,10 @@
 
 @media (max-width: 992px) {
 
+	.body-prices .table .item {
+		width: max-content;
+	}
+
 	.tasks-input {
 	    width: 100%;
 	}
@@ -423,10 +425,6 @@
 
 	#functions .img-functions img {
 		width: 100%;
-	}
-
-	.table .item-head .descr, .table .item .descr {
-		display: none;
 	}
 
 	.top, .prices, .api {
@@ -781,7 +779,7 @@
 	}
 
 	.table .item-head .launch-status, .table .item .launch-status {
-		width: 110px;
+		width: 155px;
 	}
 
 	.table .item-head .service, .table .item .service {
@@ -816,6 +814,7 @@
 
 	.table .item-head .service, .table .item .service {
 		width: 142px;
+		margin-right: 10px;
 	}
 
 	.tasks.order_3 .link input {
@@ -1144,10 +1143,6 @@
 	    text-align: center;
 	}
 
-	.table .item-head {
-		top: 60px;
-	}
-
 	.white-popup-block input {
 		font-size: 14px;
 	}
@@ -1175,9 +1170,6 @@
 }
 
 @media (max-width: 375px) {
-	.table .item-head .service, .table .item .service {
-		width: 110px;
-	}
 }
 
 @media (max-width: 320px) {

@@ -2544,3 +2544,15 @@ footer .footer-text .design span {
 .api a {
 	color: #3F79D9;
 }
+
+.body-prices .table.overflow-table {
+	max-width: 100%;
+	overflow-x: auto;
+	margin-bottom: 0;
+}
+
+
+
+.body-prices .table .item-service {
+	width: 100% !important;
+}
